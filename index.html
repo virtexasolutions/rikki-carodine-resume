@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikki Elon Carodine | Marketing & Communications Professional</title>
+    <meta name="description" content="Resume of Rikki Elon Carodine — Marketing, Communications & Branding Professional with 6+ years of experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --paper: #FDF8F5;
+            --paper-warm: #E8D5B7;
+            --paper-dark: #C9A97A;
+            --bone: #FAF5EF;
+            --ink: #3A3220;
+            --ink-soft: #5A4E3A;
+            --ink-mute: #B5A18A;
+            --ink-faint: #D6C4A8;
+            --accent: #C9A97A;
+            --olive: #7BA677;
+            --dark-bg: #2A251D;
+            --light-text: #FEFCF9;
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --section-pad: 110px;
+            --container-pad: 64px;
+            --container-max: 1280px;
+        }
+
+        @media (max-width: 1079px) { :root { --container-pad: 40px; } }
+        @media (max-width: 879px)  { :root { --container-pad: 24px; --section-pad: 80px; } }
+        @media (max-width: 559px)  { :root { --section-pad: 64px; } }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--paper);
+            background-image:
+                radial-gradient(circle at 15% 50%, rgba(106, 92, 56, 0.06), transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(106, 92, 56, 0.06), transparent 50%);
+            color: var(--ink);
+            line-height: 1.55;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.055;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+            mix-blend-mode: multiply;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--ink);
+            letter-spacing: -0.025em;
+        }
+
+        .dot { color: var(--accent); }
+
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 var(--container-pad);
+        }
+
+        /* ——— Side Rails ——— */
+        .side-rail {
+            position: fixed;
+            top: 0; bottom: 0;
+            width: 36px;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .side-rail-left  { left: 0;  border-right: 1px solid rgba(58,50,32,0.1); }
+        .side-rail-right { right: 0; border-left:  1px solid rgba(58,50,32,0.1); }
+        .rotated-text {
+            transform: rotate(-90deg);
+            white-space: nowrap;
+            font-family: var(--font-display);
+            font-size: 9.5px;
+            font-weight: 600;
+            letter-spacing: 0.42em;
+            text-transform: uppercase;
+            color: var(--ink-faint);
+        }
+        @media (max-width: 1279px) { .side-rail { display: none; } }
+
+        /* ——— Meta Strip ——— */
+        .meta-strip {
+            padding: 11px 0;
+            border-bottom: 1px solid var(--ink);
+            font-family: var(--font-display);
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--ink-faint);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+        .meta-strip .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pulse-container { display: flex; align-items: center; gap: 8px; }
+        .pulse-dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background-color: var(--olive);
+            animation: pulse 2.4s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        @media (max-width: 1079px) { .meta-strip .mid { display: none; } }
+
+        /* ——— Nav ——— */
+        nav {
+            padding: 22px 0;
+            border-bottom: 1px solid rgba(58,50,32,0.1);
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 36px;
+            align-items: center;
+        }
+        .nav-links a {
+            font-family: var(--font-display);
+            font-size: 11.5px;
+            font-weight: 600;
+            color: var(--ink-soft);
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+            transition: color 0.18s;
+        }
+        .nav-links a:hover { color: var(--accent); }
+        @media (max-width: 879px) { .nav-links { display: none; } }
+
+        /* ——— Buttons ——— */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-display);
+            font-size: 12.5px;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            border-radius: 999px;
+            padding: 12px 22px;
+            transition: all 0.18s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
+        }
+        .btn-dark {
+            background-color: var(--ink);
+            color: var(--light-text);
+        }
+        .btn-dark:hover {
+            background-color: var(--accent);
+            color: var(--ink);
+            transform: translateY(-1px);
+        }
+        .btn-warm {
+            background-color: var(--paper-warm);
+            color: var(--ink);
+        }
+        .btn-warm:hover { filter: brightness(0.95); transform: translateY(-1px); }
+
+        /* ——— Eyebrow ——— */
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            font-family: var(--font-display);
+            font-size: 10.5px;
+            font-weight: 600;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 18px;
+        }
+        .eyebrow::before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 1px;
+            background-color: var(--accent);
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        /* ——— Section Rule ——— */
+        .sec-rule {
+            border-top: 1px solid var(--ink);
+            padding-top: 14px;
+            margin-bottom: 52px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .sec-roman {
+            font-family: var(--font-display);
+            font-size: 13px;
+            color: var(--accent);
+            font-style: italic;
+        }
+        .sec-label {
+            font-family: var(--font-display);
+            font-size: 10.5px;
+            color: var(--ink-faint);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+        .sec-page {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            color: var(--ink-faint);
+            letter-spacing: 0.06em;
+        }
+
+        section { padding: var(--section-pad) 0; position: relative; }
+
+        /* ——— Hero ——— */
+        .hero {
+            padding: 80px 0 90px;
+            display: flex;
+            align-items: center;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: clamp(46px, 5.2vw, 80px);
+            line-height: 1.04;
+            margin-bottom: 18px;
+        }
+        .hero h1 em {
+            font-style: italic;
+            font-weight: 500;
+        }
+        .hero-subtitle {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-size: 17px;
+            color: var(--ink-mute);
+            margin-bottom: 36px;
+            letter-spacing: 0.01em;
+        }
+        .hero-contact { display: flex; flex-direction: column; gap: 9px; }
+        .hero-contact-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-mono);
+            font-size: 10.5px;
+            color: var(--ink-soft);
+            letter-spacing: 0.04em;
+        }
+        .hero-contact-row a { color: var(--accent); transition: opacity 0.18s; }
+        .hero-contact-row a:hover { opacity: 0.65; }
+        .hero-contact-row .sep { color: var(--ink-faint); }
+
+        .hero-image-wrap {
+            position: relative;
+            width: 100%;
+            height: 460px;
+            background-color: var(--paper-warm);
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid rgba(58,50,32,0.12);
+        }
+        .corner-bracket {
+            position: absolute;
+            width: 20px; height: 20px;
+            border: 1px solid var(--ink);
+            z-index: 10;
+        }
+        .cb-tl { top: 14px; left: 14px;  border-right: none; border-bottom: none; }
+        .cb-tr { top: 14px; right: 14px; border-left: none;  border-bottom: none; }
+        .cb-bl { bottom: 14px; left: 14px;  border-right: none; border-top: none; }
+        .cb-br { bottom: 14px; right: 14px; border-left: none;  border-top: none; }
+        .img-plate {
+            position: absolute;
+            bottom: 20px; left: 28px;
+            z-index: 10;
+            background: var(--paper);
+            padding: 3px 10px;
+            border: 1px solid var(--ink);
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.06em;
+            color: var(--ink);
+        }
+
+        @media (max-width: 879px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+            .hero-image-wrap { height: 320px; }
+        }
+        @media (max-width: 559px) {
+            .hero { padding: 48px 0 72px; }
+            .hero-image-wrap { height: 260px; }
+        }
+
+        /* ——— Summary ——— */
+        .summary-headline {
+            font-size: clamp(30px, 3.8vw, 50px);
+            line-height: 1.1;
+            margin-bottom: 28px;
+        }
+        .summary-headline em { font-style: italic; font-weight: 500; }
+        .summary-body {
+            font-size: 16.5px;
+            color: var(--ink-soft);
+            line-height: 1.75;
+            max-width: 760px;
+        }
+
+        /* ——— Experience ——— */
+        .exp-headline {
+            font-size: clamp(30px, 3.8vw, 50px);
+            line-height: 1.1;
+            margin-bottom: 48px;
+        }
+        .exp-headline em { font-style: italic; font-weight: 500; }
+
+        .exp-list { display: flex; flex-direction: column; }
+        .exp-entry {
+            border-top: 1px solid rgba(58,50,32,0.12);
+            padding: 44px 0;
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 56px;
+            align-items: start;
+        }
+        .exp-entry:last-child { border-bottom: 1px solid rgba(58,50,32,0.12); }
+
+        .exp-company {
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 5px;
+        }
+        .exp-date {
+            font-family: var(--font-mono);
+            font-size: 9.5px;
+            color: var(--ink-mute);
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .exp-chip {
+            display: inline-block;
+            font-family: var(--font-display);
+            font-size: 9.5px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink-mute);
+            border: 1px solid var(--ink-faint);
+            border-radius: 99px;
+            padding: 3px 10px;
+        }
+        .exp-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 12px;
+        }
+        .exp-links a {
+            font-family: var(--font-mono);
+            font-size: 8.5px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            border: 1px solid var(--ink-faint);
+            border-radius: 99px;
+            padding: 3px 9px;
+            transition: border-color 0.18s;
+        }
+        .exp-links a:hover { border-color: var(--accent); }
+
+        .exp-title {
+            font-family: var(--font-display);
+            font-size: 21px;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 18px;
+        }
+        .exp-bullets { display: flex; flex-direction: column; gap: 11px; }
+        .exp-bullets li {
+            font-size: 13.5px;
+            color: var(--ink-soft);
+            line-height: 1.7;
+            padding-left: 18px;
+            position: relative;
+        }
+        .exp-bullets li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 11px;
+            top: 1px;
+        }
+
+        @media (max-width: 879px) {
+            .exp-entry { grid-template-columns: 1fr; gap: 14px; padding: 32px 0; }
+        }
+
+        /* ——— Skills ——— */
+        .skills-headline {
+            font-size: clamp(30px, 3.8vw, 50px);
+            line-height: 1.1;
+            margin-bottom: 40px;
+        }
+        .skills-headline em { font-style: italic; font-weight: 500; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        @media (max-width: 879px) { .skills-grid { grid-template-columns: 1fr; } }
+
+        .skill-card {
+            background-color: var(--bone);
+            border-radius: 16px;
+            padding: 28px 26px;
+            box-shadow: inset 0 0 0 1px rgba(58,50,32,0.08), 0 20px 40px -20px rgba(58,50,32,0.09);
+            transition: transform 0.18s;
+        }
+        .skill-card:hover { transform: translateY(-3px); }
+        .skill-card h3 { font-size: 17px; margin-bottom: 16px; }
+        .skill-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+        .skill-tag {
+            font-family: var(--font-body);
+            font-size: 11.5px;
+            font-weight: 500;
+            color: var(--ink-soft);
+            background-color: var(--paper-warm);
+            border-radius: 99px;
+            padding: 5px 13px;
+        }
+
+        /* ——— Education ——— */
+        .edu-headline {
+            font-size: clamp(30px, 3.8vw, 50px);
+            line-height: 1.1;
+            margin-bottom: 40px;
+        }
+        .edu-headline em { font-style: italic; font-weight: 500; }
+
+        .edu-card {
+            background-color: var(--bone);
+            border-radius: 16px;
+            padding: 40px 44px;
+            box-shadow: inset 0 0 0 1px rgba(58,50,32,0.08), 0 20px 40px -20px rgba(58,50,32,0.09);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        @media (max-width: 879px) {
+            .edu-card { grid-template-columns: 1fr; padding: 28px 24px; }
+        }
+        .edu-degree {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        .edu-school {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            color: var(--ink-mute);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .edu-coursework {
+            font-size: 13px;
+            color: var(--ink-soft);
+            font-family: var(--font-display);
+            font-style: italic;
+            line-height: 1.7;
+        }
+        .edu-note {
+            font-size: 13.5px;
+            color: var(--ink-soft);
+            line-height: 1.75;
+        }
+
+        /* ——— Dark Panel (Certifications) ——— */
+        .dark-panel {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            padding: 84px 64px;
+            border-radius: 28px;
+            text-align: center;
+        }
+        .dark-panel h2 {
+            color: var(--light-text);
+            font-size: clamp(32px, 4vw, 54px);
+            margin-bottom: 14px;
+        }
+        .dark-panel h2 em { font-style: italic; font-weight: 500; }
+        .dark-panel .dot { color: var(--paper-warm); }
+        .dark-panel p {
+            font-size: 14.5px;
+            color: rgba(254,252,249,0.6);
+            max-width: 500px;
+            margin: 0 auto 36px;
+        }
+        .cert-badge-wrap {
+            display: flex;
+            justify-content: center;
+            margin: 28px 0 36px;
+        }
+        @media (max-width: 559px) { .dark-panel { padding: 56px 24px; } }
+
+        /* ——— Footer ——— */
+        .mega-footer {
+            padding: 80px 0 36px;
+            border-top: 1px solid rgba(58,50,32,0.1);
+            overflow: hidden;
+        }
+        .mega-word {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: clamp(60px, 12vw, 172px);
+            letter-spacing: -0.055em;
+            line-height: 0.85;
+            color: rgba(58, 50, 32, 0.08);
+            margin-bottom: 52px;
+            text-align: center;
+        }
+        .footer-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(58,50,32,0.1);
+            padding-top: 22px;
+            font-family: var(--font-display);
+            font-size: 10.5px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink-faint);
+        }
+        .footer-links { display: flex; gap: 24px; }
+        .footer-links a { transition: color 0.18s; }
+        .footer-links a:hover { color: var(--accent); }
+        @media (max-width: 559px) {
+            .footer-meta { flex-direction: column; gap: 12px; text-align: center; }
+            .footer-links { justify-content: center; }
+        }
+
+        /* ——— Desktop-only ——— */
+        .desktop-only { display: block; }
+        @media (max-width: 879px) { .desktop-only { display: none !important; } }
+
+        /* ——— Hamburger ——— */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            width: 36px;
+            height: 36px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+        .hamburger span {
+            display: block;
+            width: 100%;
+            height: 1.5px;
+            background-color: var(--ink);
+            transition: transform 0.22s ease, opacity 0.22s ease;
+            transform-origin: center;
+        }
+        .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+        @media (max-width: 879px) { .hamburger { display: flex; } }
+
+        /* ——— Mobile Nav Overlay ——— */
+        .mobile-nav {
+            position: fixed;
+            inset: 0;
+            background-color: var(--paper);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.28s ease;
+        }
+        .mobile-nav.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .mobile-nav-close {
+            position: absolute;
+            top: 22px;
+            right: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: var(--font-display);
+            font-size: 22px;
+            color: var(--ink);
+            line-height: 1;
+        }
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            padding: 0 32px;
+        }
+        .mobile-nav-links a {
+            font-family: var(--font-display);
+            font-size: clamp(28px, 8vw, 44px);
+            font-weight: 700;
+            color: var(--ink);
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            transition: color 0.18s;
+        }
+        .mobile-nav-links a:hover { color: var(--accent); }
+        .mobile-nav-links .mobile-cta {
+            margin-top: 24px;
+            font-size: 13px;
+            font-weight: 700;
+            background-color: var(--ink);
+            color: var(--light-text);
+            border-radius: 999px;
+            padding: 13px 28px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+        .mobile-nav-links .mobile-cta:hover { background-color: var(--accent); color: var(--ink); }
+
+        /* ——— Nav CTA hide on mobile ——— */
+        @media (max-width: 879px) { .nav-cta-btn { display: none; } }
+
+        /* ——— Hero mobile single-col ——— */
+        @media (max-width: 879px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 0; }
+            .hero { padding: 48px 0 64px; }
+        }
+
+        /* ——— Summary mobile ——— */
+        @media (max-width: 559px) {
+            .summary-body { font-size: 15px; }
+        }
+
+        /* ——— Sec rule mobile ——— */
+        @media (max-width: 559px) {
+            .sec-page { display: none; }
+            .sec-rule { margin-bottom: 36px; }
+        }
+
+        /* ——— Exp mobile ——— */
+        @media (max-width: 559px) {
+            .exp-title { font-size: 18px; }
+            .exp-bullets li { font-size: 13px; }
+            .exp-entry { padding: 28px 0; }
+        }
+
+        /* ——— Skills mobile ——— */
+        @media (max-width: 559px) {
+            .skill-card { padding: 22px 20px; }
+        }
+
+        /* ——— Cert panel mobile ——— */
+        @media (max-width: 559px) {
+            .dark-panel { padding: 52px 20px; border-radius: 20px; }
+        }
+
+        /* ——— Hero buttons mobile wrap ——— */
+        @media (max-width: 400px) {
+            .hero-btns { flex-direction: column; }
+            .hero-btns .btn { width: 100%; justify-content: center; }
+        }
+
+        /* ——— Footer mobile ——— */
+        @media (max-width: 559px) {
+            .mega-footer { padding: 56px 0 28px; }
+        }
+
+        /* ——— Animations ——— */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity 0.75s ease, transform 0.75s ease;
+        }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+    <div class="side-rail side-rail-left">
+        <span class="rotated-text">MARKETING & COMMUNICATIONS — PROFESSIONAL</span>
+    </div>
+    <div class="side-rail side-rail-right">
+        <span class="rotated-text">ATLANTA, GA &middot; OPEN TO REMOTE</span>
+    </div>
+
+    <div class="meta-strip">
+        <div class="container">
+            <span>VOL. 01 / RIKKI E. CARODINE</span>
+            <span class="mid">FILED UNDER: MARKETING &amp; COMMUNICATIONS</span>
+            <span class="pulse-container"><span class="pulse-dot"></span> Open to Work</span>
+        </div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Rikki<span class="dot">.</span></a>
+            <div class="nav-links">
+                <a href="#summary">Summary</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="https://rikki-portfolio.vercel.app/" target="_blank">Portfolio &#8599;</a>
+            </div>
+            <a href="mailto:rikkicarodine@gmail.com" class="btn btn-dark nav-cta-btn">Get in Touch</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&#x2715;</button>
+        <div class="mobile-nav-links">
+            <a href="#summary">Summary</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="https://rikki-portfolio.vercel.app/" target="_blank">Portfolio &#8599;</a>
+            <a href="mailto:rikkicarodine@gmail.com" class="mobile-cta">Get in Touch</a>
+        </div>
+    </div>
+
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="fade-up">
+                <span class="eyebrow">Marketing &amp; Communications</span>
+                <h1>Rikki Elon <em>Carodine</em><span class="dot">.</span></h1>
+                <p class="hero-subtitle">Brand Strategy &middot; Digital Marketing &middot; Audience Lifecycle</p>
+                <div class="hero-contact">
+                    <div class="hero-contact-row">
+                        <span>Atlanta, GA</span>
+                        <span class="sep">|</span>
+                        <span>504-430-6950</span>
+                    </div>
+                    <div class="hero-contact-row">
+                        <a href="mailto:rikkicarodine@gmail.com">rikkicarodine@gmail.com</a>
+                        <span class="sep">|</span>
+                        <a href="https://www.linkedin.com/in/rikki-carodine" target="_blank">linkedin.com/in/rikki-carodine</a>
+                    </div>
+                </div>
+                <div class="hero-btns" style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;">
+                    <a href="https://rikki-portfolio.vercel.app/" target="_blank" class="btn btn-dark">View Portfolio &#8599;</a>
+                    <a href="mailto:rikkicarodine@gmail.com" class="btn" style="background:transparent;border:1px solid rgba(58,50,32,0.25);color:var(--ink);">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image-wrap desktop-only fade-up" style="transition-delay:0.12s;">
+                <div class="corner-bracket cb-tl"></div>
+                <div class="corner-bracket cb-tr"></div>
+                <div class="corner-bracket cb-bl"></div>
+                <div class="corner-bracket cb-br"></div>
+                <div class="img-plate">PLATE N&ordm; 01 &mdash; PORTRAIT</div>
+                <img src="headshot.png" alt="Rikki Elon Carodine" style="width:100%;height:100%;object-fit:cover;object-position:center 15%;">
+            </div>
+        </div>
+    </header>
+
+    <!-- I. SUMMARY -->
+    <section id="summary">
+        <div class="container">
+            <div class="sec-rule fade-up">
+                <span class="sec-roman">I.</span>
+                <span class="sec-label">The Summary</span>
+                <span class="sec-page">001 / 005</span>
+            </div>
+            <h2 class="summary-headline fade-up">
+                Purpose-driven. Community-focused. <em>Results-oriented</em><span class="dot">.</span>
+            </h2>
+            <p class="summary-body fade-up">
+                Marketing and Communications Professional with 6+ years of experience in brand strategy, digital outreach, and audience engagement within mission-driven environments. Skilled at translating personal development and leadership messaging into clear, resonant content that builds community and strengthens brand loyalty. Background in sociology deepens understanding of audience behavior, social connection, and values-based communication. Self-directed and comfortable with remote work, digital platforms, and structured workflows. Passionate about empowering growth-focused audiences through authentic, relationship-centered communication.
+            </p>
+        </div>
+    </section>
+
+    <!-- II. EXPERIENCE -->
+    <section id="experience">
+        <div class="container">
+            <div class="sec-rule fade-up">
+                <span class="sec-roman">II.</span>
+                <span class="sec-label">Professional Experience</span>
+                <span class="sec-page">002 / 005</span>
+            </div>
+            <h2 class="exp-headline fade-up">
+                6+ years building <em>brands</em> that connect<span class="dot">.</span>
+            </h2>
+
+            <div class="exp-list">
+
+                <div class="exp-entry fade-up">
+                    <div>
+                        <div class="exp-company">Nursing CAP Inc.</div>
+                        <div class="exp-date">May 2026</div>
+                        <span class="exp-chip">Nonprofit</span>
+                    </div>
+                    <div>
+                        <div class="exp-title">Presentation Designer</div>
+                        <ul class="exp-bullets">
+                            <li>Delivered a professional, fully branded 15-slide PowerPoint presentation, generating $3,002 in savings redirected toward the organization's mission.</li>
+                            <li>Crafted compelling, audience-ready content that communicated program impact to families, donors, and community partners, strengthening organizational visibility and community support.</li>
+                            <li>Translated student accomplishments, scholarship awards, and volunteer contributions into a polished, cohesive visual narrative celebrating the dedication of everyone involved.</li>
+                            <li>Built a fully reusable annual template, freeing staff to focus on program delivery rather than design.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-entry fade-up">
+                    <div>
+                        <div class="exp-company">Virtexa Solutions</div>
+                        <div class="exp-date">Dec 2025 &ndash; Present</div>
+                        <span class="exp-chip">Remote</span>
+                        <div class="exp-links">
+                            <a href="https://virtexa-solutions.up.railway.app" target="_blank">Website &#8599;</a>
+                            <a href="https://lexi-os-landing-v1.netlify.app/" target="_blank">LexiOS &#8599;</a>
+                            <a href="https://www.instagram.com/virtexa.solutions/" target="_blank">Instagram &#8599;</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="exp-title">Founder &amp; Digital Product Lead</div>
+                        <ul class="exp-bullets">
+                            <li>Built and managed digital product platforms and web applications to deliver a premium, user-centered experience that supports adoption and long-term engagement.</li>
+                            <li>Defined product vision and translated complex requirements into clear, accessible messaging for stakeholders and end-users, strengthening brand clarity across digital touchpoints.</li>
+                            <li>Analyzed platform performance data and user behavior to identify opportunities for improving digital content delivery and audience experience.</li>
+                            <li>Executed independent projects from concept to launch in a fully remote environment, demonstrating self-motivation, structured workflow discipline, and high attention to detail.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-entry fade-up">
+                    <div>
+                        <div class="exp-company">Club Pilates</div>
+                        <div class="exp-date">Nov 2025 &ndash; Dec 2025</div>
+                        <span class="exp-chip">Huntsville, AL</span>
+                    </div>
+                    <div>
+                        <div class="exp-title">Marketing Consultant &amp; Liaison</div>
+                        <ul class="exp-bullets">
+                            <li>Developed a comprehensive market entry strategy for a new studio location by analyzing local demographics and competitor landscapes to establish early brand awareness.</li>
+                            <li>Facilitated strategic planning sessions with leadership to identify innovative client acquisition channels aligned with brand values and community engagement goals.</li>
+                            <li>Designed a 90-day engagement roadmap prioritizing member connection and retention, creating a structured communication framework for consistent outreach.</li>
+                            <li>Advised on operational execution for marketing initiatives, streamlining processes to support membership growth during the critical launch period.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-entry fade-up">
+                    <div>
+                        <div class="exp-company">Lunaria Glow &amp; Co.</div>
+                        <div class="exp-date">Oct 2024 &ndash; Apr 2026</div>
+                        <span class="exp-chip">Remote</span>
+                        <div class="exp-links">
+                            <a href="https://www.lunariaglowco.com" target="_blank">Website &#8599;</a>
+                            <a href="https://www.pinterest.com/LunariaGlowCo/" target="_blank">Pinterest &#8599;</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="exp-title">Brand Strategy Lead</div>
+                        <ul class="exp-bullets">
+                            <li>Led brand messaging and digital content strategy, translating customer insights into resonant content that strengthened audience connection and brand loyalty within the personal growth and wellness space.</li>
+                            <li>Designed customer lifecycle workflows including onboarding sequences and retention campaigns, building a seamless and supportive user journey from first touchpoint to ongoing engagement.</li>
+                            <li>Implemented content experimentation frameworks to test messaging approaches, optimize engagement, and expand digital reach across platforms.</li>
+                            <li>Analyzed user behavior and engagement metrics to refine communication strategies, ensuring content aligned with audience values and the brand's mission of personal development.</li>
+                            <li>Collaborated on digital product features to ensure all user touchpoints reinforced consistent, growth-oriented brand messaging.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-entry fade-up">
+                    <div>
+                        <div class="exp-company">Freelance</div>
+                        <div class="exp-date">2020 &ndash; 2023</div>
+                        <span class="exp-chip">Remote</span>
+                    </div>
+                    <div>
+                        <div class="exp-title">Marketing Consultant</div>
+                        <ul class="exp-bullets">
+                            <li>Directed end-to-end marketing campaigns including SMS marketing, email marketing, and lead generation, managing client communication across multiple digital channels.</li>
+                            <li>Performed comprehensive marketing audits covering paid advertising, SEO, and website optimization to identify growth opportunities and improve online outreach effectiveness.</li>
+                            <li>Created and executed automated workflows to streamline client acquisition and retention processes, reducing manual effort and improving communication consistency.</li>
+                            <li>Developed tailored marketing plans for diverse clients, ensuring strategies aligned with current industry best practices and each client's unique brand voice.</li>
+                            <li>Led email and SMS marketing initiatives that enhanced brand-to-consumer communication, deepening audience relationships and supporting conversion goals.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- III. SKILLS -->
+    <section id="skills">
+        <div class="container">
+            <div class="sec-rule fade-up">
+                <span class="sec-roman">III.</span>
+                <span class="sec-label">Core Skills</span>
+                <span class="sec-page">003 / 005</span>
+            </div>
+            <h2 class="skills-headline fade-up">
+                The <em>toolkit</em> behind the results<span class="dot">.</span>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-up">
+                    <h3>Digital Communication &amp; Outreach</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Brand Messaging</span>
+                        <span class="skill-tag">Content Strategy</span>
+                        <span class="skill-tag">Email Marketing</span>
+                        <span class="skill-tag">SMS Campaigns</span>
+                        <span class="skill-tag">Digital Outreach</span>
+                        <span class="skill-tag">Audience Engagement</span>
+                        <span class="skill-tag">Community Building</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-up" style="transition-delay:0.1s;">
+                    <h3>Marketing Systems &amp; Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">CRM (Salesforce, HubSpot)</span>
+                        <span class="skill-tag">Marketing Automation</span>
+                        <span class="skill-tag">Google Analytics</span>
+                        <span class="skill-tag">Sales Funnel Optimization</span>
+                        <span class="skill-tag">SEO</span>
+                        <span class="skill-tag">Paid Ads</span>
+                        <span class="skill-tag">HubSpot</span>
+                        <span class="skill-tag">GHL</span>
+                        <span class="skill-tag">n8n</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-up">
+                    <h3>Brand &amp; Content Strategy</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Brand Awareness</span>
+                        <span class="skill-tag">Messaging Frameworks</span>
+                        <span class="skill-tag">Content Experimentation</span>
+                        <span class="skill-tag">Customer Lifecycle Workflows</span>
+                        <span class="skill-tag">Onboarding &amp; Retention</span>
+                    </div>
+                </div>
+                <div class="skill-card fade-up" style="transition-delay:0.1s;">
+                    <h3>Leadership &amp; Collaboration</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Leadership Development</span>
+                        <span class="skill-tag">Strategic Planning</span>
+                        <span class="skill-tag">Mentorship</span>
+                        <span class="skill-tag">Stakeholder Management</span>
+                        <span class="skill-tag">Cross-Functional Teams</span>
+                        <span class="skill-tag">Remote Communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IV. EDUCATION -->
+    <section id="education">
+        <div class="container">
+            <div class="sec-rule fade-up">
+                <span class="sec-roman">IV.</span>
+                <span class="sec-label">Education</span>
+                <span class="sec-page">004 / 005</span>
+            </div>
+            <h2 class="edu-headline fade-up">
+                The <em>foundation</em><span class="dot">.</span>
+            </h2>
+            <div class="edu-card fade-up">
+                <div>
+                    <div class="edu-degree">Bachelor of Arts in Sociology</div>
+                    <div class="edu-school">Georgia State University &middot; Atlanta, GA &middot; Dec 2018</div>
+                    <p class="edu-coursework">Relevant coursework in Mass Media and Society and Social Psychology — focused on understanding audience behavior, communication dynamics, and social connection.</p>
+                </div>
+                <div>
+                    <span class="eyebrow">Sociology &amp; Communications</span>
+                    <p class="edu-note">A background in sociology provides a unique lens for understanding audience behavior and how communities form around shared values — insight directly applied to every brand strategy and campaign built since.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- V. CERTIFICATIONS -->
+    <section id="certifications">
+        <div class="container">
+            <div class="sec-rule fade-up">
+                <span class="sec-roman">V.</span>
+                <span class="sec-label">Certifications</span>
+                <span class="sec-page">005 / 005</span>
+            </div>
+            <div class="dark-panel fade-up">
+                <span class="eyebrow" style="color:var(--paper-warm);">HubSpot Academy</span>
+                <h2>Certified in Digital <em>Marketing</em><span class="dot">.</span></h2>
+                <p>Professionally certified in digital marketing strategy, tools, and best practices through HubSpot Academy.</p>
+                <div class="cert-badge-wrap desktop-only">
+                    <a href="https://app-na2.hubspot.com/academy/achievements/16khr2cc/en/1/rikki-carodine/digital-marketing" target="_blank" rel="noopener noreferrer">
+                        <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/2793ff2ce1734fea9a638a8ab448d9f1.png" alt="HubSpot Digital Marketing Certification Badge" style="width:110px;height:auto;">
+                    </a>
+                </div>
+                <a href="mailto:rikkicarodine@gmail.com" class="btn btn-warm">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mega-footer">
+        <div class="container">
+            <div class="mega-word fade-up">RIKKI<span class="dot">.</span></div>
+            <div class="footer-meta fade-up">
+                <span>MMXXVI &copy; Rikki Elon Carodine</span>
+                <span>Marketing &amp; Communications</span>
+                <span class="footer-links">
+                    <a href="https://www.linkedin.com/in/rikki-carodine" target="_blank">LinkedIn</a>
+                    <a href="mailto:rikkicarodine@gmail.com">Email</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Mobile nav toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileClose = document.getElementById('mobile-nav-close');
+
+        function openMenu() {
+            mobileNav.classList.add('open');
+            hamburger.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeMenu() {
+            mobileNav.classList.remove('open');
+            hamburger.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', openMenu);
+        mobileClose.addEventListener('click', closeMenu);
+
+        // Close when a mobile nav link is clicked
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    </script>
+</body>
+</html>
