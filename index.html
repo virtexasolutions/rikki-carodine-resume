@@ -475,6 +475,77 @@
         }
 
         /* ——— Education ——— */
+        /* Testimonials */
+        .testimonial-headline {
+            font-size: clamp(30px, 3.8vw, 50px);
+            line-height: 1.1;
+            margin-bottom: 40px;
+        }
+        .testimonial-headline em { font-style: italic; font-weight: 500; }
+
+        .testimonial-card {
+            position: relative;
+            background-color: var(--bone);
+            border-radius: 16px;
+            padding: 46px 48px;
+            box-shadow: inset 0 0 0 1px rgba(58,50,32,0.08), 0 20px 40px -20px rgba(58,50,32,0.09);
+            overflow: hidden;
+        }
+        .testimonial-card::before {
+            content: "\201C";
+            position: absolute;
+            top: 12px;
+            right: 34px;
+            font-family: var(--font-display);
+            font-size: 112px;
+            line-height: 1;
+            color: rgba(201,169,122,0.22);
+            pointer-events: none;
+        }
+        .testimonial-quote {
+            position: relative;
+            max-width: 980px;
+            font-family: var(--font-display);
+            font-size: clamp(20px, 2.4vw, 30px);
+            font-style: italic;
+            line-height: 1.48;
+            color: var(--ink);
+            margin-bottom: 30px;
+        }
+        .testimonial-meta {
+            display: grid;
+            grid-template-columns: minmax(180px, 1fr) auto;
+            gap: 28px;
+            align-items: end;
+            border-top: 1px solid rgba(58,50,32,0.12);
+            padding-top: 22px;
+        }
+        .testimonial-name {
+            font-family: var(--font-display);
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 4px;
+        }
+        .testimonial-role,
+        .testimonial-project {
+            font-family: var(--font-mono);
+            font-size: 9.5px;
+            color: var(--ink-mute);
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+        .testimonial-project {
+            color: var(--accent);
+            text-align: right;
+        }
+        @media (max-width: 679px) {
+            .testimonial-card { padding: 32px 24px; }
+            .testimonial-card::before { right: 18px; font-size: 84px; }
+            .testimonial-meta { grid-template-columns: 1fr; gap: 14px; }
+            .testimonial-project { text-align: left; }
+        }
+
         .edu-headline {
             font-size: clamp(30px, 3.8vw, 50px);
             line-height: 1.1;
@@ -545,6 +616,47 @@
             display: flex;
             justify-content: center;
             margin: 28px 0 36px;
+        }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 28px 0 36px;
+            text-align: center;
+        }
+        @media (max-width: 679px) { .cert-grid { grid-template-columns: 1fr; } }
+        .cert-item {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(254,252,249,0.12);
+            border-radius: 16px;
+            padding: 28px 26px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .cert-item-issuer {
+            font-family: var(--font-mono);
+            font-size: 9.5px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--paper-warm);
+            margin-bottom: 10px;
+        }
+        .cert-item-name {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--light-text);
+            line-height: 1.2;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+        .cert-item-badge { margin-bottom: 20px; }
+        .cert-link {
+            font-size: 11px;
+            padding: 9px 18px;
+            align-self: center;
         }
         @media (max-width: 559px) { .dark-panel { padding: 56px 24px; } }
 
@@ -757,6 +869,7 @@
                 <a href="#summary">Summary</a>
                 <a href="#experience">Experience</a>
                 <a href="#skills">Skills</a>
+                <a href="#testimonials">Testimonials</a>
                 <a href="#education">Education</a>
                 <a href="https://rikki-portfolio.vercel.app/" target="_blank">Portfolio &#8599;</a>
             </div>
@@ -773,6 +886,7 @@
             <a href="#summary">Summary</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
+            <a href="#testimonials">Testimonials</a>
             <a href="#education">Education</a>
             <a href="https://rikki-portfolio.vercel.app/" target="_blank">Portfolio &#8599;</a>
             <a href="mailto:rikkicarodine@gmail.com" class="mobile-cta">Get in Touch</a>
@@ -819,7 +933,7 @@
             <div class="sec-rule fade-up">
                 <span class="sec-roman">I.</span>
                 <span class="sec-label">The Summary</span>
-                <span class="sec-page">001 / 005</span>
+                <span class="sec-page">001 / 006</span>
             </div>
             <h2 class="summary-headline fade-up">
                 Purpose-driven. Community-focused. <em>Results-oriented</em><span class="dot">.</span>
@@ -836,7 +950,7 @@
             <div class="sec-rule fade-up">
                 <span class="sec-roman">II.</span>
                 <span class="sec-label">Professional Experience</span>
-                <span class="sec-page">002 / 005</span>
+                <span class="sec-page">002 / 006</span>
             </div>
             <h2 class="exp-headline fade-up">
                 6+ years building <em>brands</em> that connect<span class="dot">.</span>
@@ -950,7 +1064,7 @@
             <div class="sec-rule fade-up">
                 <span class="sec-roman">III.</span>
                 <span class="sec-label">Core Skills</span>
-                <span class="sec-page">003 / 005</span>
+                <span class="sec-page">003 / 006</span>
             </div>
             <h2 class="skills-headline fade-up">
                 The <em>toolkit</em> behind the results<span class="dot">.</span>
@@ -1007,13 +1121,39 @@
         </div>
     </section>
 
-    <!-- IV. EDUCATION -->
-    <section id="education">
+    <!-- IV. TESTIMONIALS -->
+    <section id="testimonials">
         <div class="container">
             <div class="sec-rule fade-up">
                 <span class="sec-roman">IV.</span>
+                <span class="sec-label">Client Testimonial</span>
+                <span class="sec-page">004 / 006</span>
+            </div>
+            <h2 class="testimonial-headline fade-up">
+                Kind words from a <em>mission-driven</em> partner<span class="dot">.</span>
+            </h2>
+            <figure class="testimonial-card fade-up">
+                <blockquote class="testimonial-quote">
+                    Thank you for the outstanding work on our celebration presentation template. Your attention to detail, creativity, and commitment to excellence were evident throughout every stage of the project. The final product exceeded our expectations and resulted in beautiful, professional, and reusable templates that will serve our organization well for years to come. Nursing CAP, Inc. is incredibly grateful for your hard work and dedication. It was a pleasure collaborating with you. I highly recommend Rikki for future projects and look forward to the opportunity to work together again.
+                </blockquote>
+                <figcaption class="testimonial-meta">
+                    <div>
+                        <div class="testimonial-name">Regina M.</div>
+                        <div class="testimonial-role">Founder and Executive Director</div>
+                    </div>
+                    <div class="testimonial-project">Presentation Creation Project</div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- V. EDUCATION -->
+    <section id="education">
+        <div class="container">
+            <div class="sec-rule fade-up">
+                <span class="sec-roman">V.</span>
                 <span class="sec-label">Education</span>
-                <span class="sec-page">004 / 005</span>
+                <span class="sec-page">005 / 006</span>
             </div>
             <h2 class="edu-headline fade-up">
                 The <em>foundation</em><span class="dot">.</span>
@@ -1032,22 +1172,32 @@
         </div>
     </section>
 
-    <!-- V. CERTIFICATIONS -->
+    <!-- VI. CERTIFICATIONS -->
     <section id="certifications">
         <div class="container">
             <div class="sec-rule fade-up">
-                <span class="sec-roman">V.</span>
+                <span class="sec-roman">VI.</span>
                 <span class="sec-label">Certifications</span>
-                <span class="sec-page">005 / 005</span>
+                <span class="sec-page">006 / 006</span>
             </div>
             <div class="dark-panel fade-up">
-                <span class="eyebrow" style="color:var(--paper-warm);">HubSpot Academy</span>
-                <h2>Certified in Digital <em>Marketing</em><span class="dot">.</span></h2>
-                <p>Professionally certified in digital marketing strategy, tools, and best practices through HubSpot Academy.</p>
-                <div class="cert-badge-wrap desktop-only">
-                    <a href="https://app-na2.hubspot.com/academy/achievements/16khr2cc/en/1/rikki-carodine/digital-marketing" target="_blank" rel="noopener noreferrer">
-                        <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/2793ff2ce1734fea9a638a8ab448d9f1.png" alt="HubSpot Digital Marketing Certification Badge" style="width:110px;height:auto;">
-                    </a>
+                <span class="eyebrow" style="color:var(--paper-warm);">Verified Credentials</span>
+                <h2>Certified &amp; <em>Credentialed</em><span class="dot">.</span></h2>
+                <p>Industry-recognized certifications in digital marketing strategy and user experience design.</p>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <div class="cert-item-issuer">HubSpot Academy</div>
+                        <div class="cert-item-name">Digital Marketing</div>
+                        <div class="cert-item-badge desktop-only">
+                            <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/2793ff2ce1734fea9a638a8ab448d9f1.png" alt="HubSpot Digital Marketing Certification Badge" style="width:90px;height:auto;">
+                        </div>
+                        <a href="https://app-na2.hubspot.com/academy/achievements/16khr2cc/en/1/rikki-carodine/digital-marketing" target="_blank" rel="noopener noreferrer" class="btn btn-warm cert-link">View Certificate &#8599;</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-item-issuer">Google &middot; Coursera</div>
+                        <div class="cert-item-name">Foundations of User Experience (UX) Design</div>
+                        <a href="https://coursera.org/share/4e98e552b3b0ddf39307474063dddead" target="_blank" rel="noopener noreferrer" class="btn btn-warm cert-link">View Certificate &#8599;</a>
+                    </div>
                 </div>
                 <a href="mailto:rikkicarodine@gmail.com" class="btn btn-warm">Get in Touch</a>
             </div>
